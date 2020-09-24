@@ -1,8 +1,6 @@
-import { throws } from 'assert';
-import { MatchResult } from './MatchResult';
+import { MatchData } from './MatchData';
 import { dateStringToDate } from './utils';
-
-type MatchData = [Date, string, string, number, number, MatchResult, string];
+import { MatchResult } from './MatchResult';
 
 interface DataReader {
     read(): void;
